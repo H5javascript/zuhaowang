@@ -1,0 +1,23 @@
+@themeColor:#039BE5;
+
+.canscroll{
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* 清除浮动 */
+.clearfix {
+  *zoom: 1;
+  &:before,&:after{
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+  clear: both;
+}
